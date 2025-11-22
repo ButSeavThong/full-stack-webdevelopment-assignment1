@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibeFlow - Music for Every Moment</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      .navbar-scrolled {
+        background-color: rgba(15, 23, 42, 0.95) !important;
+        backdrop-filter: blur(10px);
+      }
+      .carousel {
+        scroll-snap-type: x mandatory;
+      }
+      .carousel-item {
+        scroll-snap-align: start;
+      }
+      .smooth-scroll {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-900 text-white smooth-scroll">
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent"
+      id="navbar"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold">VibeFlow</h1>
+        <div class="hidden md:flex space-x-8">
+          <a href="#features" class="hover:text-purple-400 transition"
+            >Features</a
+          >
+          <a href="#pricing" class="hover:text-purple-400 transition"
+            >Pricing</a
+          >
+          <a href="#testimonials" class="hover:text-purple-400 transition"
+            >Testimonials</a
+          >
+          <a href="#footer" class="hover:text-purple-400 transition">Contact</a>
+        </div>
+        <button class="md:hidden text-3xl" id="menu-btn">☰</button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="hidden md:hidden bg-slate-800" id="mobile-menu">
+        <a href="#features" class="block py-3 px-6 hover:bg-slate-700"
+          >Features</a
+        >
+        <a href="#pricing" class="block py-3 px-6 hover:bg-slate-700"
+          >Pricing</a
+        >
+        <a href="#testimonials" class="block py-3 px-6 hover:bg-slate-700"
+          >Testimonials</a
+        >
+        <a href="#footer" class="block py-3 px-6 hover:bg-slate-700">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="gradient-bg min-h-screen flex items-center relative overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h1 class="text-5xl md:text-7xl font-black mb-6">
+          Feel the Vibe.<br />Flow with Music.
+        </h1>
+        <p class="text-xl md:text-2xl mb-10 text-gray-200">
+          Unlimited ad-free music, offline playback, and premium sound quality.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a
+            href="#pricing"
+            class="bg-white text-purple-700 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition transform hover:scale-105"
+            >Get Started Free</a
+          >
+          <a
+            href="#features"
+            class="border-2 border-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-purple-700 transition transform hover:scale-105"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Why VibeFlow Section (CSS Grid) -->
+    <section id="features" class="py-20 bg-slate-800">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+          Why Choose VibeFlow?
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div
+            class="bg-slate-700 p-8 rounded-2xl text-center hover:transform hover:scale-105 transition"
+          >
+            <div
+              class="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl"
+            >
+              🎧
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Crystal Sound</h3>
+            <p class="text-gray-300">Hi-Fi audio streaming up to 320kbps</p>
+          </div>
+          <div
+            class="bg-slate-700 p-8 rounded-2xl text-center hover:transform hover:scale-105 transition"
+          >
+            <div
+              class="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl"
+            >
+              ⬇️
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Offline Mode</h3>
+            <p class="text-gray-300">Download playlists and listen anywhere</p>
+          </div>
+          <div
+            class="bg-slate-700 p-8 rounded-2xl text-center hover:transform hover:scale-105 transition"
+          >
+            <div
+              class="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl"
+            >
+              🎤
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Lyrics & Karaoke</h3>
+            <p class="text-gray-300">Sing along with real-time lyrics</p>
+          </div>
+          <div
+            class="bg-slate-700 p-8 rounded-2xl text-center hover:transform hover:scale-105 transition"
+          >
+            <div
+              class="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl"
+            >
+              👥
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Family Plan</h3>
+            <p class="text-gray-300">6 accounts under one subscription</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section (Flexbox) -->
+    <section id="pricing" class="py-20 bg-slate-900">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+          Choose Your Plan
+        </h2>
+        <div
+          class="flex flex-col lg:flex-row gap-10 justify-center items-stretch"
+        >
+          <!-- Free -->
+          <div
+            class="bg-slate-800 rounded-2xl p-8 flex-1 max-w-sm border border-slate-700"
+          >
+            <h3 class="text-2xl font-bold mb-4">Free</h3>
+            <p class="text-5xl font-black mb-6">
+              $0<span class="text-lg font-normal">/forever</span>
+            </p>
+            <ul class="space-y-4 mb-8 text-gray-300">
+              <li>✔ Limited skips</li>
+              <li>✔ Ads between tracks</li>
+              <li>✔ Online listening only</li>
+            </ul>
+            <a
+              href="#"
+              class="block text-center bg-gray-700 py-4 rounded-full font-bold hover:bg-gray-600 transition"
+              >Current Plan</a
+            >
+          </div>
+
+          <!-- Premium Individual -->
+          <div
+            class="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl p-8 flex-1 max-w-sm transform scale-105 shadow-2xl"
+          >
+            <div
+              class="bg-white text-purple-700 text-sm font-bold px-4 py-1 rounded-full inline-block mb-4"
+            >
+              MOST POPULAR
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Premium Individual</h3>
+            <p class="text-5xl font-black mb-6">
+              $9.99<span class="text-lg font-normal">/month</span>
+            </p>
+            <ul class="space-y-4 mb-8 text-white">
+              <li>✔ Unlimited skips</li>
+              <li>✔ No ads</li>
+              <li>✔ Offline download</li>
+              <li>✔ High-quality audio</li>
+            </ul>
+            <a
+              href="#"
+              class="block text-center bg-white text-purple-700 py-4 rounded-full font-bold hover:bg-gray-200 transition"
+              >Upgrade Now</a
+            >
+          </div>
+
+          <!-- Family -->
+          <div
+            class="bg-slate-800 rounded-2xl p-8 flex-1 max-w-sm border border-slate-700"
+          >
+            <h3 class="text-2xl font-bold mb-4">Family</h3>
+            <p class="text-5xl font-black mb-6">
+              $14.99<span class="text-lg font-normal">/month</span>
+            </p>
+            <ul class="space-y-4 mb-8 text-gray-300">
+              <li>✔ Everything in Premium</li>
+              <li>✔ Up to 6 accounts</li>
+              <li>✔ Family mix playlist</li>
+              <li>✔ Parental controls</li>
+            </ul>
+            <a
+              href="#"
+              class="block text-center bg-purple-600 py-4 rounded-full font-bold hover:bg-purple-700 transition"
+              >Get Family Plan</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Carousel (CSS-only + JS controls) -->
+    <section id="testimonials" class="py-20 bg-slate-800">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+          Loved by Millions
+        </h2>
+        <div class="overflow-x-auto carousel flex gap-8 pb-4" id="carousel">
+          <div
+            class="carousel-item min-w-full md:min-w-[60%] lg:min-w-[40%] bg-slate-700 p-10 rounded-2xl"
+          >
+            <p class="text-xl italic mb-6">
+              "Best music app I've ever used. Offline mode saves my life on
+              flights!"
+            </p>
+            <div class="flex items-center">
+              <img
+                src="assets/images/avatar1.jpg"
+                alt="Sarah"
+                class="w-16 h-16 rounded-full mr-4"
+              />
+              <div>
+                <p class="font-bold">SeavThong</p>
+                <p class="text-sm text-gray-400">Designer, New York</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel-item min-w-full md:min-w-[60%] lg:min-w-[40%] bg-slate-700 p-10 rounded-2xl"
+          >
+            <p class="text-xl italic mb-6">
+              "The family plan is a game changer. All 5 of us use it daily."
+            </p>
+            <div class="flex items-center">
+              <img
+                src="assets/images/avatar2.jpg"
+                alt="Mike"
+                class="w-16 h-16 rounded-full mr-4"
+              />
+              <div>
+                <p class="font-bold">Mike Chen</p>
+                <p class="text-sm text-gray-400">Dad of 3, Texas</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel-item min-w-full md:min-w-[60%] lg:min-w-[40%] bg-slate-700 p-10 rounded-2xl"
+          >
+            <p class="text-xl italic mb-6">
+              "Sound quality is insane. Worth every penny!"
+            </p>
+            <div class="flex items-center">
+              <img
+                src="assets/images/avatar3.jpg"
+                alt="Alex"
+                class="w-16 h-16 rounded-full mr-4"
+              />
+              <div>
+                <p class="font-bold">Alex Rivera</p>
+                <p class="text-sm text-gray-400">Audiophile, Berlin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center gap-4 mt-8">
+          <button
+            onclick="scrollCarousel(-1)"
+            class="bg-slate-700 p-3 rounded-full hover:bg-purple-600 transition"
+          >
+            ←
+          </button>
+          <button
+            onclick="scrollCarousel(1)"
+            class="bg-slate-700 p-3 rounded-full hover:bg-purple-600 transition"
+          >
+            →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-slate-950 py-16">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10"
+      >
+        <div>
+          <h3 class="text-2xl font-bold mb-4">VibeFlow</h3>
+          <p class="text-gray-400">Music for every moment.</p>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white">About</a></li>
+            <li><a href="#" class="hover:text-white">Pricing</a></li>
+            <li><a href="#" class="hover:text-white">Blog</a></li>
+          </ul>
+        </div>
+        <div class="flex space-x-6 justify-center md:justify-end">
+          <a href="#" class="text-3xl hover:text-purple-400">🐦</a>
+          <a href="#" class="text-3xl hover:text-purple-400">📸</a>
+          <a href="#" class="text-3xl hover:text-purple-400">🎵</a>
+        </div>
+      </div>
+      <div class="text-center text-gray-500 mt-10 text-sm">
+        © 2025 VibeFlow. Made with ❤️ by But SeavThong
+      </div>
+    </footer>
+
+    <script>
+      // Sticky navbar + background change
+      window.addEventListener("scroll", () => {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 100) {
+          navbar.classList.add("navbar-scrolled");
+        } else {
+          navbar.classList.remove("navbar-scrolled");
+        }
+      });
+
+      // Mobile menu toggle
+      document.getElementById("menu-btn").addEventListener("click", () => {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+
+      // Carousel controls
+      function scrollCarousel(direction) {
+        const carousel = document.getElementById("carousel");
+        const scrollAmount = carousel.clientWidth * 0.8;
+        carousel.scrollBy({
+          left: direction * scrollAmount,
+          behavior: "smooth",
+        });
+      }
+    </script>
+  </body>
+</html>
