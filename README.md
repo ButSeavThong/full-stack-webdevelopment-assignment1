@@ -3,15 +3,6 @@
 **Student:** [But SeavThong]  
 **Course:** Module 1 - Web Development Fundamentals
 
-## Live Demo
-
-https://yourusername.github.io/vibeflow-landing
-
-## Screenshots
-
-![Desktop View](screenshots/desktop.png)
-![Mobile View](screenshots/mobile.png)
-
 ## Features Implemented
 
 - Fully responsive (320px → desktop)
